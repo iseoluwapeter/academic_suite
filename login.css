@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Outfit;
+}
+
+/* Image section (Large screens) */
+.image-section {
+    background: url('./assests/studious_gril.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    color: #fff;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(7, 42, 202, 0.4);
+}
+
+/* Intro text on large screens */
+.intro-text {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.intro-text {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.intro-text h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+}
+
+/* Form section */
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    background-color: #fff;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Button style */
+.btn-custom {
+    background-color: #3f51b5;
+    border: none;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #303f9f;
+}
+
+/* Small screen: image as background */
+@media (max-width: 768px) {
+    .image-section {
+        display: none;
+    }
+
+    .form-section {
+        width: 100%;
+        min-height: 100vh;
+        background: url('./assests/studious_gril.jpg') no-repeat center center/cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    .form-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(7, 42, 202, 0.4);
+        z-index: -1;
+    }
+
+    .login-container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 2rem;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    a.btn-custom {
+        text-decoration: none;
+
+        display: inline-block;
+
+    }
+
+}

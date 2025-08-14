@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Suite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!-- In <head> -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- Carousel with Navbar Inside -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Navbar Inside Carousel -->
+
+        <div class="position-absolute container top-0 start-50 translate-middle-x px-3 pt-4 w-100 "
+            style="z-index: 10;">
+            <nav class="navbar navbar-expand-md border border-white rounded-5 glass-navbar px-4 py-2 w-100">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assests/logo.png" alt="Logo" style="width: 100px;">
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav gap-2" id="mainTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="/home.html" class="nav-link active rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                Home
+
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="/publications.html" class="nav-link  rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                Publications
+
+                            </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a href="/assignment.html" class="nav-link rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                Assignment
+
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="/blogs.html" class="nav-link  rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                Blogs
+
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="/courses.html" class="nav-link rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                Courses
+
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="/Orchid.html" class="nav-link rounded-5 decoration-0"
+                                style="color: inherit; text-decoration: none;">
+                                ORCID
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active position-relative">
+                <img src="./assests/smiling_girl.jpeg" class="d-block w-100" alt="Slide 1" />
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
+                    style="transform: translateY(70px);">
+                    <h1 class="display-4 fw-bold text-white">Education Needs <br>Complete Solution</h1>
+                    <p class="lead text-white mb-4">Empower your learning journey with our all-in-one academic suite.
+                    </p>
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item position-relative">
+                <img src="./assests/group_students.jpeg" class="d-block w-100" alt="Slide 2" />
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
+                    style="transform: translateY(70px);">
+                    <h1 class="display-4 fw-bold text-white">All Your Learning Tools <br>In One Place</h1>
+                    <p class="lead text-white mb-4">Seamless access to courses, assignments, and resources anytime.</p>
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2">Explore Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item position-relative">
+                <img src="./assests/studious_gril.jpg" class="d-block w-100" alt="Slide 3" />
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
+                    style="transform: translateY(70px);">
+                    <h1 class="display-4 fw-bold text-white">Empower Students & <br>Educators</h1>
+                    <p class="lead text-white mb-4">Collaborate, learn, and grow in a unified academic ecosystem.</p>
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!------------CAROUSEL OVERLAY BOXES ----------!-->
+
+    <!-- Educational Highlights Section -->
+    <div class="container my-4 position-relative " style="transform: translateY(-100px); z-index: 1050;">
+        <div class="row g-3 px-3 slide-in">
+            <!-- Book & Library -->
+            <div class="col-12 col-md-4">
+                <div class="bg-danger text-white p-4 rounded h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="iconify" data-icon="mdi:book-open-page-variant" data-width="30"
+                            data-height="30"></span>
+                        <h4 class="mb-0">Book & Library</h4>
+                    </div>
+                    <p>
+                        Access a rich digital library with thousands of books, research papers, and reference materials
+                        to
+                        support
+                        your academic journey.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Special Education -->
+            <div class="col-12 col-md-4">
+                <div class="bg-primary text-white p-4 rounded h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="iconify" data-icon="mdi:account-tie" data-width="30" data-height="30"></span>
+                        <h4 class="mb-0">Special Education</h4>
+                    </div>
+                    <p>
+                        Tailored resources and tools to support students with diverse learning needs and create
+                        inclusive
+                        learning
+                        environments.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Professional Courses -->
+            <div class="col-12 col-md-4">
+                <div class=" text-white p-4 rounded h-100" id="professional_course">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="iconify" data-icon="mdi:school-outline" data-width="30" data-height="30"></span>
+                        <h4 class="mb-0">Professional Courses</h4>
+                    </div>
+                    <p>
+                        Enroll in certified professional courses designed to enhance your skills and prepare you for
+                        real-world
+                        careers and industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------WHAT WE OFFER --------------- -->
+    <section class="container mb-5" id="box_overlay">
+        <div class="row  g-5">
+
+            <!-- Text Column -->
+            <div class="col-12 col-lg-7 pe-lg-5 px-5"> <!-- extra padding end on large screens -->
+                <h2 class="mb-4" style="color: rgb(36, 56, 111);">What We Offer</h2>
+
+                <!-- Intro Paragraph -->
+                <p style="text-align: justify;">
+                    Our academic suite is designed to provide a comprehensive platform that empowers students,
+                    educators, and
+                    institutions.
+                    With a focus on accessibility, flexibility, and real-world readiness, we deliver tools and resources
+                    that transform
+                    traditional learning into a modern, connected experience.
+                </p>
+
+                <!-- Benefits List -->
+                <ul class="list-unstyled mx-0" style="text-align: justify; max-width: 650px;">
+                    <li class="mb-2 d-flex align-items-start gap-2">
+                        <span class="text-primary fw-bold">✔️</span>
+                        <span>Access a rich digital library of books, journals, and learning resources.</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-start gap-2">
+                        <span class="text-primary fw-bold">✔️</span>
+                        <span>Join virtual classrooms and collaborate with teachers in real time.</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-start gap-2">
+                        <span class="text-primary fw-bold">✔️</span>
+                        <span>Earn recognized certifications to enhance your academic and professional profile.</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-start gap-2">
+                        <span class="text-primary fw-bold">✔️</span>
+                        <span>Connect with a diverse learning community for peer support and growth.</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-start gap-2">
+                        <span class="text-primary fw-bold">✔️</span>
+                        <span>Manage schedules, assignments, and deadlines with smart planning tools.</span>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-12 col-lg-5 text-center text-lg-end px-5">
+                <img src="./assests/library.jpeg" alt="What we offer" class="img-fluid rounded shadow"
+                    style="max-width: 100%; height: auto;">
+            </div>
+
+        </div>
+    </section>
+
+    <!---------- WHAT STUDENTS SAY------- -->
+    <section class="py-5 position-relative text-white" id="testimonial">
+
+        <!-- Red Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-danger opacity-75"></div>
+
+        <!-- Content -->
+        <div class="container position-relative text-center">
+            <h3 class="mb-5 fw-bold display-4 display-md-5 display-lg-4 text-center">
+                What Students Say About Us
+            </h3>
+
+
+            <div class="container row mx-auto g-4 justify-content-center " style="overflow-x: hidden;">
+                <!-- Testimonial 1 -->
+                <div class="col-md-5">
+                    <div class="bg-white text-dark p-4 rounded shadow">
+                        <img src="./assests/girl.jpeg" alt="Student Photo" class="rounded-circle mx-auto d-block mb-3"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h5 class="fw-semibold mb-3">"The resources provided were top-notch. The learning environment
+                            made
+                            it easy for me to focus and grow."</h5>
+                        <p class="mb-0 fw-medium">Mariam Yusuf</p>
+                        <p class="text-muted small mb-0">University of Lagos</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-5">
+                    <div class="bg-white text-dark p-4 rounded shadow">
+                        <img src="./assests/boy.jpeg" alt="Student Photo" class="rounded-circle mx-auto d-block mb-3"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h5 class="fw-semibold mb-3">"From virtual libraries to expert mentors, this platform
+                            transformed
+                            the way I learn and engage with my course."</h5>
+                        <p class="mb-0 fw-medium">James Eze</p>
+                        <p class="text-muted small mb-0">Obafemi Awolowo University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------REQUEST A RESOURCE SECTION------------------ -->
+
+    <section class="position-relative text-white">
+        <!-- Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -2; background-color: rgb(243, 243, 243);
+    "></div>
+
+
+
+        <div class="container py-5 px-5">
+            <div class="row align-items-center" style="overflow-x: hidden;">
+                <!-- Left text -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3 " style="color: rgb(36, 56, 111);">Request A Resource</h2>
+                    <p class="mb-0 text-dark">
+                        Need access to valuable materials or support tools? Submit your request and let us help you get
+                        exactly what you need to
+                        succeed.
+                    </p>
+                    </p>
+                </div>
+
+                <!-- Right form -->
+                <div class="col-lg-6">
+                    <form class="row g-3 g-lg-4 justify-content-center">
+                        <div class="col-md-6 ">
+                            <input type="text"
+                                class="form-control bg-transparent border-bottom border-dark  text-white rounded p-3 "
+                                placeholder="First Name" />
+                        </div>
+                        <div class="col-md-6 ">
+                            <input type="text"
+                                class="form-control bg-transparent border-bottom border-dark  text-white rounded p-3 "
+                                placeholder="Last Name" />
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="text"
+                                class="form-control bg-transparent border-bottom border-dark  text-white rounded p-3 "
+                                placeholder="Phone" />
+                        </div>
+                        <div class="col-md-6 ">
+                            <input type="email"
+                                class="form-control bg-transparent border-bottom border-dark text-white rounded p-3  "
+                                placeholder="Email Address" />
+                        </div>
+                        <div class="col-12">
+                            <textarea rows="3"
+                                class="form-control bg-transparent border-bottom border-dark text-white rounded p-3"
+                                placeholder="What resource are you requesting for?"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger text-white fw-medium px-4 py-2 rounded-pill">
+                                Request Resource
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container px-5">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Have Questions?</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="iconify me-2" data-icon="mdi:map-marker"></span>
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </li>
+                        <li class="mb-2">
+                            <span class="iconify me-2" data-icon="mdi:phone"></span>
+                            +2 392 3929 210
+                        </li>
+                        <li>
+                            <span class="iconify me-2" data-icon="mdi:email"></span>
+                            info@ayorindetemilola.com
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Publications</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Assignment</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Courses</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">ORCID</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Subscribe -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Subscribe Us!</h5>
+                    <form class="d-flex mb-3">
+                        <input type="email" class="form-control me-2 bg-secondary border-0 text-light"
+                            placeholder="Enter email address" />
+                        <button class="btn btn-danger">Subscribe</button>
+                    </form>
+                    <h6 class="fw-bold">Connect With Us</h6>
+                    <div>
+                        <a href="#" class="text-light me-3 fs-5">
+                            <span class="iconify" data-icon="mdi:twitter"></span>
+                        </a>
+                        <a href="#" class="text-light me-3 fs-5">
+                            <span class="iconify" data-icon="mdi:facebook"></span>
+                        </a>
+                        <a href="#" class="text-light fs-5">
+                            <span class="iconify" data-icon="mdi:instagram"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 small">
+                &copy; 2025 All rights reserved
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- Include Iconify script -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+
+</html>
