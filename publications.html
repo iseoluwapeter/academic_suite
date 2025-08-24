@@ -13,7 +13,7 @@
     <style>
         .hero {
             position: relative;
-            background: url('./assests//publications.jpg') center/cover no-repeat;
+            background: url('./assests/publications.jpg') center/cover no-repeat;
             height: 75vh;
             display: flex;
             align-items: center;
@@ -24,7 +24,6 @@
         body {
             font-family: 'Outfit', sans-serif;
         }
-
 
         .overlay {
             position: absolute;
@@ -87,43 +86,37 @@
                             <a href="/home.html" class="nav-link rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
                                 Home
-
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="/publications.html" class="nav-link active rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
                                 Publications
-
                             </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <a href="/assignment.html" class="nav-link rounded-5 decoration-0"
+                            <a href="/resources.html" class="nav-link rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
-                                Assignment
-
+                                Resources
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="/blogs.html" class="nav-link  rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
                                 Blogs
-
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="/courses.html" class="nav-link rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
                                 Courses
-
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="/blogs.html" class="nav-link rounded-5 decoration-0"
                                 style="color: inherit; text-decoration: none;">
                                 ORCID
-
                             </a>
                         </li>
                     </ul>
@@ -147,181 +140,152 @@
         </p>
     </section>
 
-
-
     <section>
-        <section>
-            <div class="container my-5 px-4">
+        <div class="container my-5 px-4">
 
-                <!-- Top Header with Submission Button -->
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h3 class="fw-semibold text-primary m-0">Published Publications</h3>
-                    <a href="#" class="btn btn-primary">
-                        <i class="bi bi-upload me-1"></i> Make Submission
-                    </a>
+            <!-- Top Header with Submission Button -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-semibold text-primary m-0">Published Publications</h3>
+                <a href="#" class="btn btn-primary">
+                    <i class="bi bi-upload me-1"></i> Make Submission
+                </a>
+            </div>
+
+            <!-- Search & Filter -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Search publications..." id="searchInput">
                 </div>
-
-                <div class="row g-4">
-
-                    <!-- Publication Card 1 -->
-                    <div class="col-12">
-                        <div class="card shadow-lg border-0 p-3">
-                            <div class="card-body">
-                                <h4 class="card-title fw-semibold text-primary mb-2">
-                                    An Ontology for Intra-Campus Transport System (ICTS)
-                                    (A Case Study of the University of Ibadan Campus)
-                                </h4>
-                                <h6 class="text-muted mb-3">Oyedeji O.A</h6>
-                                <div class="small text-secondary mb-3">
-                                    <i class="bi bi-calendar-check me-1"></i>
-                                    <strong>Published:</strong> 2018
-                                    &nbsp; | &nbsp;
-                                    <i class="bi bi-pencil-square me-1"></i>
-                                    <strong>Modified:</strong> 2023-04-14
-                                </div>
-                                <p class="card-text">
-                                    This study looks at how to make moving around inside the University of Ibadan campus
-                                    easier and better organized. It creates a smart system that understands bus routes,
-                                    schedules, and stops so students and staff can get where they need to go faster and
-                                    with less stress.
-                                </p>
-                            </div>
-                            <div
-                                class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <button class="btn btn-outline-primary btn-sm me-2">
-                                        <i class="bi bi-hand-thumbs-up-fill"></i>
-                                        <span class="badge bg-primary">120</span>
-                                    </button>
-                                    <button class="btn btn-outline-secondary btn-sm">
-                                        <i class="bi bi-chat-dots-fill"></i>
-                                        <span class="badge bg-secondary">45</span>
-                                    </button>
-                                </div>
-                                <a href="#" class="btn btn-success btn-sm">
-                                    <i class="bi bi-download"></i> Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Publication Card 2 -->
-                    <div class="col-12">
-                        <div class="card shadow-lg border-0 p-3">
-                            <div class="card-body">
-                                <h4 class="card-title fw-semibold text-primary mb-2">
-                                    Efficacy of Assistive Technology for Improved Teaching and Learning in Computer
-                                    Science
-                                </h4>
-                                <h6 class="text-muted mb-3">Enitan Olabisi Adebayo, Ibiyinka Temilola Ayorinde</h6>
-                                <div class="small text-secondary mb-3">
-                                    <i class="bi bi-calendar-check me-1"></i>
-                                    <strong>Published:</strong> 2022
-                                    &nbsp; | &nbsp;
-                                    <i class="bi bi-pencil-square me-1"></i>
-                                    <strong>Modified:</strong> 2023-04-14
-                                </div>
-                                <p class="card-text">
-                                    This study explored how assistive technology can improve teaching and learning in
-                                    computer science within an inclusive school setting. Using a survey of students with
-                                    special needs and their teachers at Durbar Grammar School, Oyo, two hypotheses were
-                                    tested.
-                                </p>
-                            </div>
-                            <div
-                                class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                <div>
-                                    <button class="btn btn-outline-primary btn-sm me-2">
-                                        <i class="bi bi-hand-thumbs-up-fill"></i>
-                                        <span class="badge bg-primary">85</span>
-                                    </button>
-                                    <button class="btn btn-outline-secondary btn-sm">
-                                        <i class="bi bi-chat-dots-fill"></i>
-                                        <span class="badge bg-secondary">30</span>
-                                    </button>
-                                </div>
-                                <a href="#" class="btn btn-success btn-sm">
-                                    <i class="bi bi-download"></i> Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="col-md-3">
+                    <select class="form-select" id="yearFilter">
+                        <option value="">Filter by Year</option>
+                        <option value="2018">2018</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="typeFilter">
+                        <option value="">Filter by File Type</option>
+                        <option value="PDF">PDF</option>
+                        <option value="DOCX">DOCX</option>
+                    </select>
                 </div>
             </div>
-        </section>
 
+            <div class="row g-4">
+
+                <!-- Publication Card 1 -->
+                <div class="col-12 publication-card" data-title="An Ontology for Intra-Campus Transport System"
+                    data-year="2018" data-type="PDF">
+                    <div class="card shadow-lg border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title fw-semibold text-primary mb-2">
+                                An Ontology for Intra-Campus Transport System (ICTS)
+                            </h4>
+                            <h6 class="text-muted mb-3">Oyedeji O.A</h6>
+                            <div class="small text-secondary mb-3">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                <strong>Published:</strong> 2018
+                            </div>
+                            <p class="card-text">
+                                This study looks at how to make moving around inside the University of Ibadan campus
+                                easier and better organized.
+                            </p>
+                        </div>
+                        <div
+                            class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <button class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <span class="badge bg-primary">120</span>
+                                </button>
+                            </div>
+                            <a href="#" class="btn btn-success btn-sm">
+                                <i class="bi bi-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication Card 2 -->
+                <div class="col-12 publication-card" data-title="Efficacy of Assistive Technology" data-year="2022"
+                    data-type="DOCX">
+                    <div class="card shadow-lg border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title fw-semibold text-primary mb-2">
+                                Efficacy of Assistive Technology for Improved Teaching and Learning
+                            </h4>
+                            <h6 class="text-muted mb-3">Enitan Olabisi Adebayo, Ibiyinka Temilola Ayorinde</h6>
+                            <div class="small text-secondary mb-3">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                <strong>Published:</strong> 2022
+                            </div>
+                            <p class="card-text">
+                                This study explored how assistive technology can improve teaching and learning in
+                                computer science.
+                            </p>
+                        </div>
+                        <div
+                            class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <button class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <span class="badge bg-primary">85</span>
+                                </button>
+                            </div>
+                            <a href="#" class="btn btn-success btn-sm">
+                                <i class="bi bi-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-
-
     <!-- footer -->
-    <footer class="bg-dark text-light pt-5 pb-4">
+    <footer class="bg-dark text-light pt-5 pb-4 mt-5">
         <div class="container px-4">
-            <div class="row">
-                <!-- Contact Info -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Have Questions?</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <span class="iconify me-2" data-icon="mdi:map-marker"></span>
-                            203 Fake St. Mountain View, San Francisco, California, USA
-                        </li>
-                        <li class="mb-2">
-                            <span class="iconify me-2" data-icon="mdi:phone"></span>
-                            +2 392 3929 210
-                        </li>
-                        <li>
-                            <span class="iconify me-2" data-icon="mdi:email"></span>
-                            info@ayorindetemilola.com
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Links -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Publications</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Assignment</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Courses</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">ORCID</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Subscribe -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Subscribe Us!</h5>
-                    <form class="d-flex mb-3">
-                        <input type="email" class="form-control me-2 bg-secondary border-0 text-light"
-                            placeholder="Enter email address" />
-                        <button class="btn btn-danger">Subscribe</button>
-                    </form>
-                    <h6 class="fw-bold">Connect With Us</h6>
-                    <div>
-                        <a href="#" class="text-light me-3 fs-5">
-                            <span class="iconify" data-icon="mdi:twitter"></span>
-                        </a>
-                        <a href="#" class="text-light me-3 fs-5">
-                            <span class="iconify" data-icon="mdi:facebook"></span>
-                        </a>
-                        <a href="#" class="text-light fs-5">
-                            <span class="iconify" data-icon="mdi:instagram"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="text-center mt-4 small">
                 &copy; 2025 All rights reserved
-
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Filtering Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("searchInput");
+            const yearFilter = document.getElementById("yearFilter");
+            const typeFilter = document.getElementById("typeFilter");
+            const publications = document.querySelectorAll(".publication-card");
+
+            function filterPublications() {
+                const searchText = searchInput.value.toLowerCase();
+                const selectedYear = yearFilter.value;
+                const selectedType = typeFilter.value;
+
+                publications.forEach(card => {
+                    const title = card.getAttribute("data-title").toLowerCase();
+                    const year = card.getAttribute("data-year");
+                    const type = card.getAttribute("data-type");
+
+                    const matchesSearch = title.includes(searchText);
+                    const matchesYear = selectedYear === "" || year === selectedYear;
+                    const matchesType = selectedType === "" || type === selectedType;
+
+                    card.style.display = (matchesSearch && matchesYear && matchesType) ? "block" : "none";
+                });
+            }
+
+            searchInput.addEventListener("input", filterPublications);
+            yearFilter.addEventListener("change", filterPublications);
+            typeFilter.addEventListener("change", filterPublications);
+        });
+    </script>
 </body>
 
 </html>

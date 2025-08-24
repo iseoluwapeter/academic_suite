@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container my-5">
+        <div class="row">
+            <!-- Blog Content -->
+            <div class="col-lg-8">
+                <h1 id="blog-title" class="fw-bold mb-3"></h1>
+                <p id="blog-meta" class="text-muted"></p>
+                <img id="blog-image" src="" alt="Blog Image" class="img-fluid rounded mb-4">
+                <p id="blog-content"></p>
+                <div id="blog-tags" class="mt-4"></div>
+
+                <!-- Comments -->
+                <div class="mt-5">
+                    <h4>Comments</h4>
+                    <div id="comments-section"></div>
+                    <form class="mt-4">
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Leave a comment</label>
+                            <textarea id="comment" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="col-lg-4">
+                <h5 class="mb-3">Related Posts</h5>
+                <div id="related-posts" class="list-group"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const blogPosts = {
+            1: {
+                title: "Exploring Modern Research Techniques",
+                meta: "By Dr. John Doe | Aug 14, 2025",
+                image: "./assests/young-student-learning-library.jpg",
+                content: "In today’s fast- paced world, research has evolved beyond traditional methods to embrace innovative approaches driven by technology and data.Modern research techniques combine qualitative and quantitative strategies, supported by advanced tools like AI, big data analytics, and cloud- based collaboration platforms.Researchers now leverage digital surveys, social media insights, and machine learning models to gather and interpret data more efficiently.Open-access databases and collaborative tools also make it easier to share findings globally, fostering innovation across industries.By integrating technology with critical thinking, modern research not only accelerates discovery but also ensures accuracy and relevance in solving complex problems.",
+                tags: ["Research", "Technology"]
+            },
+            2: {
+                title: "Innovative Approaches in Learning",
+                meta: "By Dr. Jane Smith | Aug 12, 2025",
+                image: "./assests/studious_gril.jpg",
+                content: "Education is rapidly evolving, embracing creativity and technology to make learning more engaging and effective. Innovative approaches go beyond traditional classrooms, focusing on interactive methods that enhance understanding and retention.Tech- driven tools such as virtual reality(VR), gamified learning platforms, and AI- powered tutors provide immersive experiences, making complex concepts easier to grasp.Collaborative learning, project-based assignments, and real - world problem - solving also encourage critical thinking and practical application.These modern strategies not only improve knowledge acquisition but also foster curiosity, adaptability, and lifelong learning skills—essential for thriving in a fast - changing world.",
+                tags: ["Education", "Innovation"]
+            },
+            3: {
+                title: "Top Trends in Academic Publishing",
+                meta: "By Dr. Alex Brown | Aug 10, 2025",
+                image: "./assests/library.jpeg",
+                content: "The academic publishing landscape is undergoing a major transformation, driven by technology and the demand for open, accessible knowledge. Researchers, institutions, and publishers are embracing new practices to improve the dissemination of scholarly work.One key trend is the rise of open- access publishing, making research freely available to a global audience. Digital - first journals and AI- powered peer review are also streamlining publication processes, reducing turnaround times, and improving quality.Additionally, data-driven research and preprint servers are gaining traction, allowing early sharing of findings before formal publication.These trends reflect a shift towards transparency, collaboration, and innovation, shaping the future of academic communication.",
+                tags: ["Publishing", "Trends"]
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const postId = params.get("id");
+        const post = blogPosts[postId];
+
+        if (post) {
+            document.getElementById("blog-title").textContent = post.title;
+            document.getElementById("blog-meta").textContent = post.meta;
+            document.getElementById("blog-image").src = post.image;
+            document.getElementById("blog-content").textContent = post.content;
+
+            const tagsContainer = document.getElementById("blog-tags");
+            post.tags.forEach(tag => {
+                const badge = document.createElement("span");
+                badge.className = "badge bg-primary me-1";
+                badge.textContent = tag;
+                tagsContainer.appendChild(badge);
+            });
+
+            const relatedPostsContainer = document.getElementById("related-posts");
+            Object.entries(blogPosts).forEach(([id, b]) => {
+                if (id !== postId) {
+                    const link = document.createElement("a");
+                    link.href = `blog-detail.html?id=${id}`;
+                    link.className = "list-group-item list-group-item-action";
+                    link.textContent = b.title;
+                    relatedPostsContainer.appendChild(link);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

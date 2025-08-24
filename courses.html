@@ -25,7 +25,6 @@
             font-family: 'Outfit', sans-serif;
         }
 
-
         .overlay {
             position: absolute;
             top: 0;
@@ -41,7 +40,6 @@
             text-align: center;
         }
 
-        /* Glass effect for navbar */
         .glass-navbar {
             background-color: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
@@ -59,73 +57,40 @@
             color: #fff !important;
             padding-inline: 20px;
         }
+
+        .course-card {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 
 <body>
     <section class="hero">
-
-        <!-- navbar on hero -->
+        <!-- Navbar -->
         <div class="position-absolute container top-0 start-50 translate-middle-x px-3 pt-4 w-100 "
             style="z-index: 10;">
             <nav class="navbar navbar-expand-md border border-white rounded-5 glass-navbar px-4 py-2 w-100">
-                <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="./assests/logo.png" alt="Logo" style="width: 100px;">
                 </a>
-
-                <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                     aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Nav Items -->
                 <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                     <ul class="navbar-nav gap-2" id="mainTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a href="/home.html" class="nav-link rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                Home
-
-                            </a>
+                        <li class="nav-item"><a href="/home.html" class="nav-link rounded-5">Home</a></li>
+                        <li class="nav-item"><a href="/publications.html" class="nav-link rounded-5">Publications</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="/publications.html" class="nav-link  rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                Publications
-
-                            </a>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a href="/assignment.html" class="nav-link  rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                Assignment
-
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="/blogs.html" class="nav-link  rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                Blogs
-
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="/courses.html" class="nav-link active rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                Courses
-
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="/Orchid.html" class="nav-link rounded-5 decoration-0"
-                                style="color: inherit; text-decoration: none;">
-                                ORCID
-
-                            </a>
-                        </li>
+                        <li class="nav-item"><a href="/resources.html" class="nav-link rounded-5">Resources</a></li>
+                        <li class="nav-item"><a href="/blogs.html" class="nav-link rounded-5">Blogs</a></li>
+                        <li class="nav-item"><a href="/courses.html" class="nav-link active rounded-5">Courses</a></li>
+                        <li class="nav-item"><a href="/Orchid.html" class="nav-link rounded-5">ORCID</a></li>
                     </ul>
                 </div>
             </nav>
@@ -137,218 +102,102 @@
         </div>
     </section>
 
-    <!-- Objectives of Publications -->
-    <section class="container py-5 px-4  px-md-4">
+    <!-- Intro Section -->
+    <section class="container py-5 px-4 px-md-4">
         <h3 class="fw-semibold text-primary mb-4">Helpful Educational Courses</h3>
         <p class="text-muted fs-5 mb-0">
-            Our courses are designed to empower learners with practical skills and in-depth knowledge in computer
-            science and related fields. Each course combines theoretical understanding with hands-on exercises,
-            fostering critical thinking, innovation, and real-world problem-solving abilities for students, educators,
-            and professionals alike.
+            Our courses are designed to empower learners with practical skills and in-depth knowledge...
         </p>
     </section>
 
-
-
-
-
-
-    <section>
-        <section>
-            <div class="container ">
-
-                <!-- Top Header with Submission Button -->
-                <div class="container justify-content-between align-items-center">
-                    <h3 class="fw-semibold text-primary m-0">Available courses</h3>
-
-                </div>
-
-                <!-- courses -->
-
-                <section class="container mt-4 mb-5">
-
-                    <div class="row g-4">
-
-                        <!-- Course Card 1 -->
-                        <div class="col-12 ">
-                            <div class="card shadow-lg border-0 p-3">
-                                <div class="card-body">
-                                    <h4 class="card-title fw-semibold text-primary mb-2">Introduction to Artificial
-                                        Intelligence</h4>
-                                    <h6 class="text-muted mb-3">Dr. Adebayo Olawale</h6>
-                                    <div class="small text-secondary mb-3">
-                                        <i class="bi bi-calendar-check me-1"></i>
-                                        <strong>Year:</strong> 2024
-                                    </div>
-                                    <p class="card-text">
-                                        Learn the fundamentals of AI, including machine learning, neural networks, and
-                                        natural language
-                                        processing. Apply practical AI solutions to real-world problems.
-                                    </p>
-                                </div>
-                                <div
-                                    class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn btn-success btn-sm">
-                                        <i class="bi bi-download"></i> Download
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Course Card 2 -->
-                        <div class="col-12 ">
-                            <div class="card shadow-lg border-0 p-3">
-                                <div class="card-body">
-                                    <h4 class="card-title fw-semibold text-primary mb-2">Web Development and Design</h4>
-                                    <h6 class="text-muted mb-3">Ms. Temilola Akinyemi</h6>
-                                    <div class="small text-secondary mb-3">
-                                        <i class="bi bi-calendar-check me-1"></i>
-                                        <strong>Year:</strong> 2023
-                                    </div>
-                                    <p class="card-text">
-                                        Master modern web technologies including HTML, CSS, JavaScript, and responsive
-                                        frameworks. Build
-                                        interactive websites and web apps from scratch.
-                                    </p>
-                                </div>
-                                <div
-                                    class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn btn-success btn-sm">
-                                        <i class="bi bi-download"></i> Download
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Course Card 3 -->
-                        <div class="col-12 ">
-                            <div class="card shadow-lg border-0 p-3">
-                                <div class="card-body">
-                                    <h4 class="card-title fw-semibold text-primary mb-2">Data Science and Analytics</h4>
-                                    <h6 class="text-muted mb-3">Dr. Chinedu Okafor</h6>
-                                    <div class="small text-secondary mb-3">
-                                        <i class="bi bi-calendar-check me-1"></i>
-                                        <strong>Year:</strong> 2024
-                                    </div>
-                                    <p class="card-text">
-                                        Explore data cleaning, visualization, and analysis using Python and R. Gain
-                                        insights from large
-                                        datasets and learn predictive modeling techniques.
-                                    </p>
-                                </div>
-                                <div
-                                    class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn btn-success btn-sm">
-                                        <i class="bi bi-download"></i> Download
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Course Card 4 -->
-                        <div class="col-12 ">
-                            <div class="card shadow-lg border-0 p-3">
-                                <div class="card-body">
-                                    <h4 class="card-title fw-semibold text-primary mb-2">Cybersecurity Essentials</h4>
-                                    <h6 class="text-muted mb-3">Engr. Ibiyinka Ayorinde</h6>
-                                    <div class="small text-secondary mb-3">
-                                        <i class="bi bi-calendar-check me-1"></i>
-                                        <strong>Year:</strong> 2022
-                                    </div>
-                                    <p class="card-text">
-                                        Understand fundamental cybersecurity concepts, including network security,
-                                        ethical hacking, and
-                                        threat mitigation strategies for organizations.
-                                    </p>
-                                </div>
-                                <div
-                                    class="card-footer bg-white border-0 pt-0 d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn btn-success btn-sm">
-                                        <i class="bi bi-download"></i> Download
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                </section>
-
-            </div>
-        </section>
-
-    </section>
-
-
-
-    <!-- footer -->
-    <footer class="bg-dark text-light pt-5 pb-4">
-        <div class="container px-5">
-            <div class="row">
-                <!-- Contact Info -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Have Questions?</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <span class="iconify me-2" data-icon="mdi:map-marker"></span>
-                            203 Fake St. Mountain View, San Francisco, California, USA
-                        </li>
-                        <li class="mb-2">
-                            <span class="iconify me-2" data-icon="mdi:phone"></span>
-                            +2 392 3929 210
-                        </li>
-                        <li>
-                            <span class="iconify me-2" data-icon="mdi:email"></span>
-                            info@ayorindetemilola.com
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Links -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Publications</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Assignment</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Courses</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">ORCID</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Subscribe -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">Subscribe Us!</h5>
-                    <form class="d-flex mb-3">
-                        <input type="email" class="form-control me-2 bg-secondary border-0 text-light"
-                            placeholder="Enter email address" />
-                        <button class="btn btn-danger">Subscribe</button>
-                    </form>
-                    <h6 class="fw-bold">Connect With Us</h6>
-                    <div>
-                        <a href="#" class="text-light me-3 fs-5">
-                            <span class="iconify" data-icon="mdi:twitter"></span>
-                        </a>
-                        <a href="#" class="text-light me-3 fs-5">
-                            <span class="iconify" data-icon="mdi:facebook"></span>
-                        </a>
-                        <a href="#" class="text-light fs-5">
-                            <span class="iconify" data-icon="mdi:instagram"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4 small">
-                &copy; 2025 All rights reserved
-
+    <!-- Filter Dropdown -->
+    <section class="container mb-4">
+        <div class="row">
+            <div class="col-md-4 ">
+                <select class="form-select" id="accessFilter">
+                    <option value="">Filter by Access</option>
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                </select>
             </div>
         </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="container mt-4 mb-5">
+        <div class="row g-4" id="coursesContainer">
+
+            <!-- Course Card 1 -->
+            <div class="col-12 course-card" data-access="public"
+                onclick="window.location.href='course-detail.html?id=1'">
+                <div class="card shadow-lg border-0 p-3">
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold text-primary mb-2">Introduction to Artificial Intelligence
+                        </h4>
+                        <h6 class="text-muted mb-3">Dr. Adebayo Olawale</h6>
+                        <div class="small text-secondary mb-3"><i
+                                class="bi bi-calendar-check me-1"></i><strong>Year:</strong> 2024</div>
+                        <p class="card-text">Learn the fundamentals of AI...</p>
+                        <span class="badge bg-success">Public</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="col-12 course-card" data-access="private"
+                onclick="window.location.href='course-detail.html?id=2'">
+                <div class="card shadow-lg border-0 p-3">
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold text-primary mb-2">Web Development and Design</h4>
+                        <h6 class="text-muted mb-3">Ms. Temilola Akinyemi</h6>
+                        <div class="small text-secondary mb-3"><i
+                                class="bi bi-calendar-check me-1"></i><strong>Year:</strong> 2023</div>
+                        <p class="card-text">Master modern web technologies...</p>
+                        <span class="badge bg-danger">Private</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="col-12 course-card" data-access="public"
+                onclick="window.location.href='course-detail.html?id=3'">
+                <div class="card shadow-lg border-0 p-3">
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold text-primary mb-2">Data Science and Analytics</h4>
+                        <h6 class="text-muted mb-3">Dr. Chinedu Okafor</h6>
+                        <div class="small text-secondary mb-3"><i
+                                class="bi bi-calendar-check me-1"></i><strong>Year:</strong> 2024</div>
+                        <p class="card-text">Explore data cleaning, visualization, and analysis...</p>
+                        <span class="badge bg-success">Public</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container px-5 text-center small">
+            &copy; 2025 All rights reserved
+        </div>
     </footer>
+
+    <!-- Filtering Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const accessFilter = document.getElementById("accessFilter");
+            const courseCards = document.querySelectorAll(".course-card");
+
+            accessFilter.addEventListener("change", () => {
+                const selectedAccess = accessFilter.value;
+                courseCards.forEach(card => {
+                    const cardAccess = card.getAttribute("data-access");
+                    card.style.display = (selectedAccess === "" || selectedAccess === cardAccess) ? "block" : "none";
+                });
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
